@@ -2,10 +2,14 @@
 
 FluxKart is an platform that lets some unidentified  people buy some undisclosed stuff (wink wink ;) for totally not for time travel purposes, this repo is a extension to a small use case of fluxkart for identity resolution, it is a microservice built to unify user profiles based on email and phone numbers. This project tackles the challenge of recognizing users who make purchases with different contact details.
 
-> **Live URL:** [https://fluxkart-p95a.onrender.com/api/v1.0/user/identify](https://fluxkart-p95a.onrender.com/api/v1.0/user/identify)
-> **Postman Collection:** `Contacts.postman_collection.json`
+> **Live URL:** 
+[https://fluxkart-p95a.onrender.com/api/v1.0/user/identify](https://fluxkart-p95a.onrender.com/api/v1.0/user/identify)
+
+> **Postman Collection:** 
+`Contacts.postman_collection.json`
+
 > **Deploy to Render:**
-> [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/captain0jay/FluxKart)
+>[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/captain0jay/FluxKart)
 
 ---
 
