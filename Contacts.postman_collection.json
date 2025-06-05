@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "1f04b732-f726-4b34-97ca-63a3a6febbb9",
+		"name": "Contacts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34106873",
+		"_collection_link": "https://lively-water-383834.postman.co/workspace/Bitespeed~1a453923-f434-4745-a85a-b14dc2d362be/collection/34106873-1f04b732-f726-4b34-97ca-63a3a6febbb9?action=share&source=collection_link&creator=34106873"
+	},
+	"item": [
+		{
+			"name": "Identify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"jay4@gmail.com\",\r\n    \"phoneNumber\": 56454\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SERVER_URL}}/api/v1.0/user/identify",
+					"host": [
+						"{{SERVER_URL}}"
+					],
+					"path": [
+						"api",
+						"v1.0",
+						"user",
+						"identify"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

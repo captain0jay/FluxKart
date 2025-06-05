@@ -1,0 +1,33 @@
+# render.yaml
+services:
+  - type: web
+    plan: free
+    name: backend
+    runtime: docker
+    repo: https://github.com/captain0jay/FluxKart.git
+    rootDir: ./
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: POSTGRES_DB_URL
+        sync: false
+      - key: MAIN_PSQL_DATABASE
+        sync: false
+      - key: MAIN_PSQL_USER
+        sync: false
+      - key: MAIN_PSQL_PASSWORD
+        sync: false
+      - key: MAIN_PSQL_HOST
+        sync: false
+      - key: MAIN_PSQL_PORT
+        sync: false
+      - key: MAIN_PSQL_APPLICATION_NAME
+        sync: false
+      - key: MAIN_PSQL_MAX_POOL
+        sync: false
+      
+
+  
