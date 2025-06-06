@@ -121,6 +121,17 @@ async function identifyUserService(userData: any): Promise<any> {
                 }, { resourceType: 'USER', log: 'CONTACT', message: 'Error updating user contacts', meta: {} })
             }
         }
+
+        if (bothEmailPhonePresent?.length !== 0) {
+            const primaryContact = bothEmailPhonePresent?.find((contact: any) => contact?.link_precedence === Constants.DB.MODELS.CONTACTS.LINK_PRECEDENCE.PRIMARY)
+            const secondaryContacts = userContacts?.filter(contact => contact?.id !== primaryContact?.id)
+            response ={
+                primaryContactId: primaryContact?.id,
+                emails: [primaryContact?.email, ...secondaryContacts?.map(contact => contact?.email)],
+                phoneNumbers: [ primaryContact?.phone_number, ...secondaryContacts?.map(contact => contact?.phone_number)],
+                secondaryContactIds: [ ...secondaryContacts?.map(contact => contact?.id)]
+            }
+        }
     }
 
     return response
